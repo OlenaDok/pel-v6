@@ -136,7 +136,7 @@
                     <div class="ttl-cell">
                         <div class="ttl-grp">
                             <div class="lbl-hdr-s bld">סה''כ כולל מע''מ</div>
-                            <div class="ttl-cell bll-prd-ttl"> {{ billselected.total }}</div>
+                            <div class="ttl-cell bll-prd-ttl"> {{ billselected.total }} &#8362;</div>
 
                         </div>
                         <div class="ttl-cell-line">
@@ -151,8 +151,8 @@
     </section>
 
 <section class="main-content-nav visibledevice" id="divnav">
-    <nav class="cell-nav" onclick="getData('pay')" id="pay"> פירוט חיובים</nav>
-    <nav class="cell-nav" onclick="getData('use')" id="use">פירוט השימוש </nav>
+    <nav class="cell-nav active" onclick="getData('pay')" id="pay"> פירוט חיובים</nav>
+    <nav class="cell-nav" onclick="getData('use')" id="use">פירוט השימוש</nav>
     <nav class="cell-nav" onclick="getData('act')" id="act">פעולות נוספות</nav>
 </section>
 
@@ -217,12 +217,11 @@
         </section>
         <section class="payment visibledevice" id="payment">
             <div class=" wrp-cnt visibledesktop">
-                <label class="hdr use-txt hdr-r"> פירוט חיובים</label>  {{ billselected.msgbox.length}}
+                <label class="hdr use-txt hdr-r"> פירוט חיובים</label>
                 <div class="msgbox-wrp">
-
                     <a ng-if="billselected.msgbox.length > 0 " ng-click="showMSGbox()" href="#msgbox">
-                        <div class="count" data-msgvalue="{{billselected.msgbox.length}}"> </div>
-                        <div class="msgbox-m"  ></div>
+                        <div ng-class="{true:'count-1', false:'count-2'}[billselected.msgbox.length < 10]" data-msgvalue="{{billselected.msgbox.length}}">{{ billselected.msgbox.length}} </div>
+                        <div ng-class="{true:'msgbox-m-1', false:'msgbox-m-2'}[billselected.msgbox.length < 10]"></div>
 
                     </a>
                 </div>
@@ -351,8 +350,7 @@
 
 
         <section class="total_bill all_total">
-            <div ng-if="billselected.subsum!=''" class="payment_total blue">
-
+            <div ng-if="billselected.subsum.length > 0" class="payment_total blue">
                 <div class="payment_total_row ">
                     <span class="payment_total_desc">הפרשי עיגול </span>
                     <span class="payment_total_v">{{ billselected.subsum }} &#8362; </span>
@@ -390,31 +388,26 @@
     {
     "index": "0",
     "subsciber": "כל המנויים",
-    "total": "&#8362; 221.73",
+    "total": " 221.73",
+    "subsum": "1.23",
     "bill_parts": [
     {
     "bill_part_total": "221.72",
     "bill_part_desc": "חיובים קבועים",
     "bill_part_msg": "חיוב בגין שרותים בתשלום חודשי קבוע",
     "paycode": "pcn",
-
-    "submsg": "-1"
-    }
-    ,
+    "submsg": "abc"
+    },
     {
     "bill_part_total": "0.00",
     "bill_part_desc": "חיובים משתנים",
     "bill_part_msg": "חיוב על פי שימוש",
     "paycode": "pch",
-
     "submsg": "-1"
     }
-
-
-
-    ]
-    ,
-    "service_usageALL": [         {
+    ],
+    "service_usageALL": [
+    {
     "sub": "0503492002",
     "in": "in",
     "used": [
@@ -469,23 +462,21 @@
     "procentSms": ""
     }
     ]
-    }]
-    ,
+    }
+    ],
     "msgbox": [
     {
     "msg": "לידיעתך, בתאריך 16/05/2020 סך התשלום שהתקבל עבור חיוב קודם הוא 302.61 ₪ באמצעי התשלום המעודכן אצלנו. רק  במידה והתשלום כובד זהו אישור סופי.",
     "date": "NO_DATE",
     "title": ""
     }
-
     ]
-    }
-
-    ,
+    },
     {
     "index": "1",
     "subsciber": "00000000000",
-    "total": "&#8362; 7.90",
+    "total": " 7.90",
+    "subsum": "",
     "bill_parts": [
     {
     "bill_part_total": "7.90",
@@ -498,23 +489,15 @@
     "rate": "0.00",
     "total": "7.90"
     }
-
     ],
     "submsg": "-1"
     }
-
-
-
     ]
-
-
-    }
-
-    ,
+    },
     {
     "index": "2",
     "subsciber": "0503492002",
-    "total": "&#8362; 54.88",
+    "total": " 54.88",
     "bill_parts": [
     {
     "bill_part_total": "54.88",
@@ -622,11 +605,9 @@
     "rate": "0.00",
     "total": "0.00"
     }
-
     ],
     "submsg": "-1"
-    }
-    ,
+    },
     {
     "bill_part_total": "0.00",
     "bill_part_desc": "חיובים משתנים",
@@ -643,15 +624,10 @@
     "rate": "28389.912",
     "total": ""
     }
-
     ],
     "submsg": "-1"
     }
-
-
-
-    ]
-    ,
+    ],
     "service_usage": [
     {
     "in": "in",
@@ -666,8 +642,7 @@
     }
     ]
     }
-    ]
-    ,
+    ],
     "msgbox": [
     {
     "msg": "",
@@ -709,15 +684,13 @@
     "date": "NO_DATE",
     "title": "0"
     }
-
     ]
-    }
-
-    ,
+    },
     {
     "index": "3",
     "subsciber": "0504482002",
-    "total": "&#8362; 61.16",
+    "total": " 61.16",
+    "subsum": "1.58",
     "bill_parts": [
     {
     "bill_part_total": "61.16",
@@ -790,11 +763,9 @@
     "rate": "0.00",
     "total": "0.00"
     }
-
     ],
-    "submsg": "-1"
-    }
-    ,
+    "submsg": "asbv"
+    },
     {
     "bill_part_total": "0.00",
     "bill_part_desc": "חיובים משתנים",
@@ -821,15 +792,10 @@
     "rate": "4506.291",
     "total": ""
     }
-
     ],
     "submsg": "-1"
     }
-
-
-
-    ]
-    ,
+    ],
     "service_usage": [
     {
     "in": "in",
@@ -844,8 +810,7 @@
     }
     ]
     }
-    ]
-    ,
+    ],
     "msgbox": [
     {
     "msg": "",
@@ -887,15 +852,13 @@
     "date": "NO_DATE",
     "title": "0"
     }
-
     ]
-    }
-
-    ,
+    },
     {
     "index": "4",
     "subsciber": "0504492002",
-    "total": "&#8362; 48.89",
+    "total": " 48.89",
+    "subsum": "",
     "bill_parts": [
     {
     "bill_part_total": "48.89",
@@ -983,11 +946,9 @@
     "rate": "0.00",
     "total": "0.00"
     }
-
     ],
     "submsg": "-1"
-    }
-    ,
+    },
     {
     "bill_part_total": "0.00",
     "bill_part_desc": "חיובים משתנים",
@@ -1004,15 +965,10 @@
     "rate": "11746.566",
     "total": ""
     }
-
     ],
     "submsg": "-1"
     }
-
-
-
-    ]
-    ,
+    ],
     "service_usage": [
     {
     "in": "in",
@@ -1027,8 +983,7 @@
     }
     ]
     }
-    ]
-    ,
+    ],
     "msgbox": [
     {
     "msg": "",
@@ -1070,15 +1025,13 @@
     "date": "NO_DATE",
     "title": "0"
     }
-
     ]
-    }
-
-    ,
+    },
     {
     "index": "5",
     "subsciber": "0509500767",
-    "total": "&#8362; 48.89",
+    "total": " 48.89",
+    "subsum": "5.60",
     "bill_parts": [
     {
     "bill_part_total": "48.89",
@@ -1176,11 +1129,9 @@
     "rate": "0.00",
     "total": "0.00"
     }
-
     ],
     "submsg": "-1"
-    }
-    ,
+    },
     {
     "bill_part_total": "0.00",
     "bill_part_desc": "חיובים משתנים",
@@ -1212,15 +1163,10 @@
     "rate": "",
     "total": ""
     }
-
     ],
     "submsg": "-1"
     }
-
-
-
-    ]
-    ,
+    ],
     "service_usage": [
     {
     "in": "in",
@@ -1235,8 +1181,7 @@
     }
     ]
     }
-    ]
-    ,
+    ],
     "msgbox": [
     {
     "msg": "",
@@ -1270,6 +1215,26 @@
     },
     {
     "msg": "אתה נהנה מ -  הטבת גלישה 10GB  למנוי 0509500767 , להזכירך תקופת ההטבה תסתיים בתאריך |BOLD_C|14/08/2020|BOLD_C|",
+    "date": "NO_DATE",
+    "title": "0"
+    },
+    {
+    "msg": "אתה נהנה מהטבת הצטרפות לתוכנית Family Plan New  בתעריף של 39.90  ש''ח לחודש למנוי 0509500767 , להזכירך  תקופת ההטבה תסתיים בתאריך |BOLD_C|15/07/2020|BOLD_C| ותנאי התוכנית יתעדכנו ל -  45.80  ש''ח לחודש עפ''י הסכם  ההצטרפות.",
+    "date": "NO_DATE",
+    "title": "0"
+    },
+    {
+    "msg": "אתה נהנה מהטבת הצטרפות לתוכנית Family Plan New  בתעריף של 39.90  ש''ח לחודש למנוי 0509500767 , להזכירך  תקופת ההטבה תסתיים בתאריך |BOLD_C|15/07/2020|BOLD_C| ותנאי התוכנית יתעדכנו ל -  45.80  ש''ח לחודש עפ''י הסכם  ההצטרפות.",
+    "date": "NO_DATE",
+    "title": "0"
+    },
+    {
+    "msg": "אתה נהנה מהטבת הצטרפות לתוכנית Family Plan New  בתעריף של 39.90  ש''ח לחודש למנוי 0509500767 , להזכירך  תקופת ההטבה תסתיים בתאריך |BOLD_C|15/07/2020|BOLD_C| ותנאי התוכנית יתעדכנו ל -  45.80  ש''ח לחודש עפ''י הסכם  ההצטרפות.",
+    "date": "NO_DATE",
+    "title": "0"
+    },
+    {
+    "msg": "אתה נהנה מהטבת הצטרפות לתוכנית Family Plan New  בתעריף של 39.90  ש''ח לחודש למנוי 0509500767 , להזכירך  תקופת ההטבה תסתיים בתאריך |BOLD_C|15/07/2020|BOLD_C| ותנאי התוכנית יתעדכנו ל -  45.80  ש''ח לחודש עפ''י הסכם  ההצטרפות.",
     "date": "NO_DATE",
     "title": "0"
     },

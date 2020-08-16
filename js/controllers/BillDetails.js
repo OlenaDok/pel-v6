@@ -210,8 +210,15 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
         $scope.showp2 = -1;
         $scope.getdetails(0);
 
+        console.log('in initial before checkBox');
+
         var checkBox = document.getElementById("collapsible");
         checkBox.checked = false;
+
+        console.log('in initial before payment');
+        var payment = document.getElementById('payment');
+        payment.style.display = 'flex';
+        console.log('in initial display = \'flex\';');
     };
 
     $scope.showI = function(index) {
@@ -313,7 +320,7 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
         var divobjectCount =  document.getElementsByClassName("count")[0];
         if(!msgBoxVisited){
             msgBoxVisited = true;
-            divobjectCount.classList.toggle("hide");
+          /*  divobjectCount.classList.toggle("hide");*/
         }
         else {
             divobjectCount.classList.remove("hide");
