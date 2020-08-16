@@ -147,10 +147,12 @@
     }
     .payment_total_row {
         width: 100%;
+        justify-content: space-around;
     }
 
     .payment_total_rowT {
         width: 100%;
+        justify-content: space-evenly;
     }
 
     .p-rght {
@@ -332,10 +334,12 @@
     .payment_total_row {
         width: 65%;
         padding-left: 9%;
+        justify-content: space-between;
     }
 
     .payment_total_rowT {
         width: 75%;
+        justify-content: space-between;
     }
     .item_total {
         font-size: 25px;
@@ -502,11 +506,13 @@
 
     .payment_total_row {
         width: 70%;
-        padding-left: 5%;
+        padding-left: 6%;
+        justify-content: space-between;
     }
 
     .payment_total_rowT {
         width: 75%;
+        justify-content: space-between;
     }
 
     .wrp-cnt{

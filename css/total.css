@@ -16,15 +16,14 @@
     display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: space-between;
     align-self: flex-end;
 }
 
 .payment_total_rowT {
     display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
     flex-flow: row;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: center;
+
     align-self: flex-end;
 }
 
@@ -34,7 +33,8 @@
     width: 50%;
     word-wrap: normal;
     font-weight: normal;
-    line-height: 1.2;
+    line-height: 1.5;
+
 }
 .payment_total_v {
     text-align: left;
@@ -78,7 +78,7 @@
     text-align: left;
 }
 .spr {
-
+line-height: 1.2;
     font-size: 30px;
 }
 
@@ -101,6 +101,9 @@
     display:table-cell;
     vertical-align:middle;
     text-align:left;
+    height: min-content;
+    padding: 0;
+
 }
 
 .lineAft123{
@@ -109,12 +112,12 @@
 }
 
 .lineAft {
-    display: inline-flex;
+    display: block;
     background-image: url("img/line_pic.png");
     background-repeat: no-repeat;
     width: 151px;
     height: 13px;
-    transform: scale(0.85);
+  /*  transform: scale(0.8);*/
 }
 
 
