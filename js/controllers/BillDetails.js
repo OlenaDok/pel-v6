@@ -352,6 +352,7 @@ function get_list(bill) {
 */
 function checkBillData(elementID) {
     var data = document.getElementById(elementID);
+     alert('before parse ' + JSON.stringify(data.innerHTML));
     try {
         //JSON.parse(data.innerHTML);
         JSON.parse(JSON.stringify(data.innerHTML));
