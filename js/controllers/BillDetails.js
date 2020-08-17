@@ -351,11 +351,13 @@ function get_list(bill) {
 }
 */
 function checkBillData(elementID) {
-    var data = document.getElementById(elementID);
-     alert('before parse ' + JSON.stringify(data.innerHTML));
+       var data = document.getElementById(elementID);
+    
+    var result = data.innerHTML.replace(/ /g, "").replace(/\n/g, "");
+    alert('before parse ' + (result));
     try {
         //JSON.parse(data.innerHTML);
-        JSON.parse(JSON.stringify(data.innerHTML));
+        JSON.parse((result));
     } catch (err) {
         console.log('invalid: wrong data - ' + err);
         alert('smt was wrong// please try later error is' + err);
