@@ -353,10 +353,11 @@ function get_list(bill) {
 function checkBillData(elementID) {
     var data = document.getElementById(elementID);
     try {
-        JSON.parse(data.innerHTML);
+        //JSON.parse(data.innerHTML);
+        JSON.parse(JSON.stringify(data.innerHTML));
     } catch (err) {
         console.log('invalid: wrong data - ' + err);
-        alert('smt was wrong// please try later');
+        alert('smt was wrong// please try later error is' + err);
         return false;
     }
     return true;
