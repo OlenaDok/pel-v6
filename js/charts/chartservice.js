@@ -30,7 +30,7 @@ myApp.service('ChartService', function ($timeout) {
         circleStart.setAttribute('id', 'start');
         circleStart.setAttribute('cx', '10');
         circleStart.setAttribute('cy', '10');
-        circleStart.setAttribute('r', '1');
+        circleStart.setAttribute('r', '0.5');
         circleStart.setAttribute('stroke', color);
         circleStart.setAttribute('stroke-width', '1');
         circleStart.setAttribute('fill', color);
@@ -40,7 +40,7 @@ myApp.service('ChartService', function ($timeout) {
         circleEnd.setAttribute('id', 'end');
         circleEnd.setAttribute('cx', '110');
         circleEnd.setAttribute('cy', '10');
-        circleEnd.setAttribute('r', '1');
+        circleEnd.setAttribute('r', '0.5');
         circleEnd.setAttribute('stroke', base_color);
         circleEnd.setAttribute('stroke-width', '1');
         circleEnd.setAttribute('fill', base_color);
@@ -49,7 +49,7 @@ myApp.service('ChartService', function ($timeout) {
         circleValue.setAttribute('id', 'pointValue');
         circleValue.setAttribute('cx', circleValue_v);
         circleValue.setAttribute('cy', '10');
-        circleValue.setAttribute('r', '1');
+        circleValue.setAttribute('r', '0.5');
         circleValue.setAttribute('stroke', color);
         circleValue.setAttribute('stroke-width', '1');
         circleValue.setAttribute('fill', color);
@@ -64,11 +64,11 @@ myApp.service('ChartService', function ($timeout) {
         val.setAttribute('stroke-width', '2');
         val.setAttribute('d', valueLineD);
 
-        svg.append(base);
-        svg.append(val);
-        svg.append(circleStart);
-        svg.append(circleEnd);
-        svg.append(circleValue);
+        svg.appendChild(base);
+        svg.appendChild(val);
+        svg.appendChild(circleStart);
+        svg.appendChild(circleEnd);
+        svg.appendChild(circleValue);
 
         return svg;
     }

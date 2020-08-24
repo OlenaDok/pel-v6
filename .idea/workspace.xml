@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1937ff2e-8ce8-4695-87a4-78fec93760cf" name="Default Changelist" comment="es5/1" />
+    <list default="true" id="1937ff2e-8ce8-4695-87a4-78fec93760cf" name="Default Changelist" comment="es5/3">
+      <change afterPath="$PROJECT_DIR$/css/fonts/Assistant-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fonts/spacerboldwebfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fonts/spacerboldwebfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fonts/spacerboldwebfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fonts/spacerboldwebfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fonts/spacerregularwebfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/fonts/spacerregularwebfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/smth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-07.html" beforeDir="false" afterPath="$PROJECT_DIR$/bill-07.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bill-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bill-header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/payment.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/payment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/total.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/total.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/usage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/usage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/charts/chartservice.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/charts/chartservice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/BillDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/BillDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,14 +54,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css/fonts" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\webstorm\pel.v.6_es5\css\fonts" />
+      <recent name="D:\webstorm\pel.v.6_es5\css\img" />
+      <recent name="D:\webstorm\pel.v.6_es5\css\img\msg" />
+      <recent name="D:\webstorm\pel.v.6_es5\css" />
       <recent name="D:\webstorm\pel.v.6_es5" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1937ff2e-8ce8-4695-87a4-78fec93760cf" name="Default Changelist" comment="" />
@@ -35,6 +77,8 @@
       <option name="presentableId" value="Default" />
       <updated>1597606364402</updated>
       <workItem from="1597606365607" duration="738000" />
+      <workItem from="1597820353834" duration="21807000" />
+      <workItem from="1598257890657" duration="5759000" />
     </task>
     <task id="LOCAL-00001" summary="es5/1">
       <created>1597606777428</created>
@@ -43,24 +87,76 @@
       <option name="project" value="LOCAL" />
       <updated>1597606777428</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="es5/2">
+      <created>1597610831975</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597610831975</updated>
+    </task>
+    <task id="LOCAL-00003" summary="es5/3">
+      <created>1597621640683</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597621640683</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="es5/1" />
-    <option name="LAST_COMMIT_MESSAGE" value="es5/1" />
+    <MESSAGE value="es5/2" />
+    <MESSAGE value="es5/3" />
+    <option name="LAST_COMMIT_MESSAGE" value="es5/3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="494" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598212584150">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="494" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1598212584150" />
     <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1597606690138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597606690138" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597607085277">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597621647927">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597607085277" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597621647927" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597608727016">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1597608727016" />
+    <state x="569" y="313" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1597608871413">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="569" y="313" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1597608871413" />
   </component>
 </project>

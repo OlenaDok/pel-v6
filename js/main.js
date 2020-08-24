@@ -81,19 +81,58 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 );
 console.log('main');
-/*loadChart();
-var divsMain = document.querySelectorAll('.bll-prd-select');
-console.log('querySelectorAll ' + divsMain.length);
-divsMain.
-document.addEventListener("selectionchange1", function(){
-    console.log('selectionchange');
-    console.log(document.getSelection());
-    loadChart();
-});
 
-document.getElementById("myBtn").addEventListener("click", function(){
-    console.log('event');
-   // console.log(document.getSelection());
-    loadChart();});
+
+function getBrowser() {
+    var ua = navigator.userAgent;
+
+    var msie = ua.indexOf("MSIE ");
+    console.log('msie= ' + msie);
+
+    var trident = ua.indexOf('Trident/');
+    if (trident > 0) {
+        // IE 11 => return version number
+        var rv = ua.indexOf('rv:');
+        var ver =  parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+    }
+    console.log('ver= ' + ver);
+
+}
+getBrowser();
+/*
+function ieNotSuported()
+{$("body").prepend("<div class='overlay'></div>"),$("body").prepend("<div class='ex8msg'>אתר פלאפון נתמך בגרסת דפדפן Internet Explorer 11 ומעלה  בלבד</div>"),$("body").css("overflow","hidden"),$(".scroll-prompt").css("display","none")}
+var ua=window.navigator.userAgent,msie=ua.indexOf("MSIE "),rv=-1;
+if(msie>0||navigator.userAgent.match(/Trident.*rv\:11\./))
+    if(isNaN(parseInt(ua.substring(msie+5,ua.indexOf(".",msie)))));
+    else
+        {var ex8=parseInt(ua.substring(msie+5,ua.indexOf(".",msie)));
+        if("8"==ex8||"7"==ex8||"6"==ex8||"9"==ex8||"10"==ex8){
+            !function(e,i,n,r,s,t,a){t=i.createElement(n),
+                a=i.getElementsByTagName(n)[0],
+                t.src="/digitalsite/scripts/libs/jquery-1.9.1.min.js",
+                a.parentNode.insertBefore(t,a)}(window,document,"script");
+var intervalId=setInterval(function(){"undefined"!=typeof $&&(clearInterval(intervalId),ieNotSuported())},50)}}
+
+ieNotSuported();
 */
-//bll-prd-select
+    const ipop = document.getElementsByTagName('idiv');
+
+window.onclick = function(event) {
+
+    console.log('mouse event');
+    //alert(event.target)
+    if (event.target == ipop) {
+        ipop.style.display = "none";
+    }
+}
+
+function closePops () {
+    console.log('u want close pops');
+    const ipop = document.getElementsByTagName('idiv');
+    console.log('ipop = ' + ipop.length);
+    for (var i = 1; i < ipop.length ; i++){
+        ipop[i].classList.toggle("show");
+    }
+}
+

@@ -1,5 +1,5 @@
 .usage {
-    align-self: stretch;
+    align-self: flex-start;
     /*   display: block; */
     /* flex-flow: column ;
      align-items: center;
@@ -78,6 +78,7 @@
 .lineChart {
     width: 60%;
     align-content: center;
+    max-height: 38px ;
 }
 .usage_data_val {
     width: 10%;
