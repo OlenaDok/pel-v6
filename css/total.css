@@ -3,6 +3,7 @@
     flex-flow: column ;
     align-items: center;
     justify-content: center;
+    align-self: stretch;
 }
 .payment_total {
     width: 100%;
@@ -30,7 +31,7 @@
 .payment_total_desc {
     align-content: center;
     justify-content: center;
-    width: 50%;
+    width: 60%;
     word-wrap: normal;
     font-weight: normal;
     line-height: 1.5;

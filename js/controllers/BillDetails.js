@@ -40,13 +40,6 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
       //  console.log('before serv');
         countBox();
 
-/*
-        console.log('useFilter ' + $scope.useFilter);
-        console.log('this.onpageIn ' + onpageIn);
-        console.log('this.onPageOut ' + onPageOut);
-*/
-        console.log('msg for bill parts ' + JSON.stringify(obj.bill_parts[0].submsg));
-        console.log('msg for bill parts 2' + obj.bill_parts[0].submsg);
     }
 
     $scope.showIn = function (value) {
@@ -210,15 +203,12 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
         $scope.showp2 = -1;
         $scope.getdetails(0);
 
-        console.log('in initial before checkBox');
-
         var checkBox = document.getElementById("collapsible");
         checkBox.checked = false;
 
-        console.log('in initial before payment');
         var payment = document.getElementById('payment');
         payment.style.display = 'flex';
-        console.log('in initial display = \'flex\';');
+
     };
 
     $scope.showI = function(index) {
@@ -327,6 +317,8 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
         }
     }
 
+
+
 });
 
 myApp.controller('CustomerDetails', function ($scope) {
@@ -351,9 +343,15 @@ function get_list(bill) {
 }
 */
 function checkBillData(elementID) {
+
+    var data = document.getElementById(elementID);
+
+    var result = data.innerHTML.replace(/ /g, "").replace(/\n/g, "").replace(/\t/g, "");
+
        var data = document.getElementById(elementID);
     
     var result = data.innerHTML.replace(/ /g, "").replace(/\n/g, "");
+
     alert('before parse ' + (result));
     try {
         //JSON.parse(data.innerHTML);
