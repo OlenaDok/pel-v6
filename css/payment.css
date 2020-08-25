@@ -482,9 +482,10 @@ height: 100%;
     direction: ltr;
     display: block;
     background-color: #DFF1FF;
+    opacity: 1;
     color: #153958;
     width: 250px;
-    min-height: 6em;
+    min-height: min-content;
     max-height: 6em;
     padding: 8px;
     position: absolute;
@@ -493,11 +494,9 @@ height: 100%;
     border: #E6E6E6 solid 1px;
     border-radius: 5px;
     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
-    /* overflow-y: scroll;
+     overflow-y: auto;
      overflow-x: hidden;
      word-wrap: break-spaces;
-     */
-
 }
 
 .i-popup {
@@ -595,7 +594,7 @@ height: 100%;
     -webkit-align-self: center;
 
     width: 50%;
-    padding-top: 1em;
+   /* padding-top: 1em;*/
     padding-left: 2%;
 }
 
@@ -647,11 +646,11 @@ height: 100%;
     font-size: 16px;
     font-weight: bold;
     float: left;
-    height: 1.3em;
-    width: 1.3em;
+    height: 1.2em;
+    width: 1.2em;
     border-radius: 50%;
-    top: -2px;
-    left: -10px;
+    top: -1px;
+    left: -9px;
 
 }
 
@@ -701,13 +700,8 @@ height: 100%;
 
 .msgbox-wrpD {
     position: fixed;
-    /*  top: 0;
-        /*
-       bottom: 0;
-       left: 0;
-       right: 0;
-
-      */
+    top: 0;
+    left: 0;
     background: rgba(0, 0, 0, 0.7);
     transition: opacity 750ms;
     z-index: 998;
@@ -717,6 +711,7 @@ height: 100%;
     height: 100%;
     min-height:min-content;
     overflow-y: auto;
+
 
 }
 /*
@@ -729,12 +724,13 @@ height: 100%;
     position: absolute;
     display: flex;
     flex-flow: column;
+    width: inherit;
 
-    width: 75%;
-    margin-top: 10em;
+    align-items: center;
+justify-content: center;
+    align-self: center;
 
-   align-self: center;
-    justify-content: center;
+
     /*  position: relative;*/
     /*   width: min-content;*/
     /* z-index: 99;*/
@@ -746,6 +742,7 @@ height: 100%;
 
     /*calc(-250px - 10%);*/
     /*    top: 70%;*/
+top: 15%;
     animation: fadeIn 1s;
     transition: opacity 500ms;
     height: min-content;
@@ -763,20 +760,20 @@ height: 100%;
     -moz-box-pack: center;
     -ms-flex-pack: center;
     -webkit-align-self: center;
+    align-self: center;
 
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 1px 6.48px 1.52px rgba(0, 0, 0, 0.2);
     position: absolute;
-    left: 0;
-    top: 0;
+
     color: #153958;
-    width: 45em;
+
     height: min-content;
     padding: 0 8px 8px;
     position: absolute;
     z-index: 301;
-    bottom: 0;
+    top: 0;
     border: #E6E6E6 solid 1px;
 
 }
@@ -903,3 +900,9 @@ height: 100%;
     content: 'דקות/ יחידות';
 }
 
+.msgbox-mob {
+    width: 50%;
+    flex-flow: row;
+justify-content: flex-end;
+
+}

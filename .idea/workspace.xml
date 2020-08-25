@@ -17,23 +17,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1937ff2e-8ce8-4695-87a4-78fec93760cf" name="Default Changelist" comment="es5/3">
-      <change afterPath="$PROJECT_DIR$/css/fonts/Assistant-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts/spacerboldwebfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts/spacerboldwebfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts/spacerboldwebfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts/spacerboldwebfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts/spacerregularwebfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts/spacerregularwebfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/smth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/img/arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bill-07.html" beforeDir="false" afterPath="$PROJECT_DIR$/bill-07.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/bill-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bill-header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/payment.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/payment.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/total.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/total.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/usage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/usage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/charts/chartservice.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/charts/chartservice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/controllers/BillDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/BillDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
@@ -54,12 +44,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/css/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css/img" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\webstorm\pel.v.6_es5\css\fonts" />
       <recent name="D:\webstorm\pel.v.6_es5\css\img" />
+      <recent name="D:\webstorm\pel.v.6_es5\css\fonts" />
       <recent name="D:\webstorm\pel.v.6_es5\css\img\msg" />
       <recent name="D:\webstorm\pel.v.6_es5\css" />
       <recent name="D:\webstorm\pel.v.6_es5" />
@@ -78,7 +68,7 @@
       <updated>1597606364402</updated>
       <workItem from="1597606365607" duration="738000" />
       <workItem from="1597820353834" duration="21807000" />
-      <workItem from="1598257890657" duration="5759000" />
+      <workItem from="1598257890657" duration="27717000" />
     </task>
     <task id="LOCAL-00001" summary="es5/1">
       <created>1597606777428</created>
@@ -101,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597621640683</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="es5/3">
+      <created>1598293371549</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598293371549</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,10 +143,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597606690138" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597621647927">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1598293536593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597621647927" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598293536593" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597608727016">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

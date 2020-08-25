@@ -93,55 +93,34 @@ bill-data-row {
 }
 
 .bll-prd-select {
+   width: 100%;
+    font-size: 20px;
     color: rgb(76, 76, 76);
-    font-size: 25px;
-    margin-top: 0.5em;
-    line-height: 0.75;
-    padding: .2em ;
-    width: 7em;
-    max-width: 100%; /* useful when width is set to anything other than 100% */
-    box-sizing: border-box;
-    /*  margin: 0;*/
-    border: 1px solid rgb(196, 196, 196);
-    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-    border-radius: .2em;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    max-height: 5em;
+    line-height: 1.25;
 }
-.bll-prd-select:hover {
-    border-color: #888;
+
+select::-ms-expand {
+    display: none;
 }
-/*
-.bll-prd-select:focus {
-    border-color: #aaa;
-    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-    color: #222;
-    outline: none;
-}
-*/
 .bll-prd-select option {
-    font-weight:normal;
+    font-weight:lighter;
 }
 
-
-
-select {
+.bll-prd-select select {
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: transparent;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    appearance: none;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+);
+   /* background-position: 98% center;*/
+    background-position-x: 0;
+    background-position-y: center;
     background-repeat: no-repeat;
-  /*  background-position-x: 100%; */
-    background-position-y: 50%;
-    border: 1px solid #dfdfdf;
-    border-radius: 2px;
-    margin-right: 2rem;
-    padding: 1rem;
-    padding-right: 2rem;
-    float: left;
+    outline: none;
+    border-width: 1px;
+    border-color: rgb(196, 196, 196);
+    border-style: solid;
+    border-radius: 5px;
+    width: 75%;
 }
 .ttl-col {
     display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
@@ -162,7 +141,7 @@ select {
 
     -ms-flex-direction: column;
     -ms-flex-pack: justify;
-    width: 50%;
+    width: 47%;
 }
 
 
