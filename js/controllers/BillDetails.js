@@ -375,7 +375,7 @@ function checkBillData(elementID) {
     
     var result = data.innerHTML.replace(/ /g, "").replace(/\n/g, "");
 
-    alert('before parse ' + (result));
+   // alert('before parse ' + (result));
     try {
         //JSON.parse(data.innerHTML);
         JSON.parse((result));
