@@ -366,9 +366,15 @@ function get_list(bill) {
 }
 */
 function checkBillData(elementID) {
+
     var data = document.getElementById(elementID);
 
     var result = data.innerHTML.replace(/ /g, "").replace(/\n/g, "").replace(/\t/g, "");
+
+       var data = document.getElementById(elementID);
+    
+    var result = data.innerHTML.replace(/ /g, "").replace(/\n/g, "");
+
     alert('before parse ' + (result));
     try {
         //JSON.parse(data.innerHTML);
