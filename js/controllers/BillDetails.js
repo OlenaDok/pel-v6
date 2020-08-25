@@ -16,7 +16,7 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
     var  partToOpen = {} ;
     partToOpen.status = false;
     var partsOne;
-
+    var icont;
     /* --to do --*/
     var msgBoxVisited;
 
@@ -209,6 +209,11 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
         var payment = document.getElementById('payment');
         payment.style.display = 'flex';
 
+     /*   partsOne =  document.getElementsByClassName("payline");
+
+        var singlePart = partsOne[0];*/
+        icont = new Array();
+
     };
 
     $scope.showI = function(index) {
@@ -218,6 +223,7 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
        /// console.log('partsOne= ' +  partsOne[0].innerHTML);
 
         var singlePart = partsOne[index];
+        icont = new Array(singlePart.length);
         var idiv = singlePart.getElementsByTagName('idiv');
 
       /**  console.log('idiv[0].className = ' +  idiv[0].innerHTML);*/
@@ -225,29 +231,44 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
       var info = singlePart.getElementsByTagName('ispan');
        /* console.log('info[0].innerHTML = ' +  info[0].innerHTML);*/
         var popupMSG = $scope.parts[index].submsg;
-       console.log('popupMSG = ' +  $scope.parts[index].submsg);
+
         var iInfo =  singlePart.getElementsByTagName("info");
         info[0].innerHTML = $scope.parts[index].submsg;
         var isCurrState = idiv[0].classList[1];
         console.log('isCurrState = ' +  isCurrState);
-       if (isCurrState === 'hide' ){
+       if (isCurrState === 'ng-hide' ){
+           /*
            idiv[0].classList.remove("hide");
 
            idiv[0].classList.toggle("show");
-
+*/
            iInfo[0].classList.remove("active");
            iInfo[0].classList.toggle("disactive");
+           icont[index] = true;
        }
         if (isCurrState === 'show' ||  isCurrState === undefined){
+            /*
             idiv[0].classList.remove("show");
 
             idiv[0].classList.toggle("hide");
+             */
 
             iInfo[0].classList.remove("disactive");
             iInfo[0].classList.toggle("active");
+
+            icont[index] = false;
         }
+
+        $scope.iValue = icont;
     }
 
+    $scope.disactive = function () {
+        console.log('disactive = ');
+
+        for( var i = 0; i < icont.length; i++) {
+            icont[i] = false;
+        }
+    }
     $scope.showMSGbox = function () {
         //msgbox-wrpD
         var divobject =  document.getElementsByClassName("msgbox-wrpD")[0];
@@ -294,7 +315,7 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
 
 
         data+= boxEnd;
-        msgbox1.innerHTML = data;
+        divmsgbox.innerHTML = data;
 
         divobject.style.visibility = 'visible';
         divobject.style.opacity = '1';
@@ -317,7 +338,9 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
         }
     }
 
-
+    self.onpointerdown = function() {
+        $scope.disactive();
+    }
 
 });
 

@@ -116,11 +116,11 @@ var intervalId=setInterval(function(){"undefined"!=typeof $&&(clearInterval(inte
 
 ieNotSuported();
 */
-    const ipop = document.getElementsByTagName('idiv');
-
+/*
 window.onclick = function(event) {
-
-    console.log('mouse event');
+    const ipop = document.getElementsByTagName('ispan');
+    console.log('ipop is' + ipop);
+    console.log('mouse event' + event.target);
     //alert(event.target)
     if (event.target == ipop) {
         ipop.style.display = "none";
@@ -132,7 +132,7 @@ function closePops () {
     const ipop = document.getElementsByTagName('idiv');
     console.log('ipop = ' + ipop.length);
     for (var i = 1; i < ipop.length ; i++){
-        ipop[i].classList.toggle("show");
+        ipop[i].classList.remove("show");
     }
 }
-
+*/
