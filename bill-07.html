@@ -31,14 +31,12 @@
     <script src="js/vendor/angular.min.js"></script>
 
 </head>
-<body ng-app="myBill" onmousedown="closePops()">
+<body ng-app="myBill">
 <section id="msgbox" class="msgbox-wrpD">
-    <msgdiv class="msgbox-popup">
-        <msgbox class="msgbox-popup-content"></msgbox>
-    </msgdiv>
+    <msgdiv class="msgbox-popup"></msgdiv>
 </section>
 
-<article class="wraper" ng-controller="SubsDetails">
+<article class="wraper" ng-controller="SubsDetails" ng-mousedown="disactive()">
     <header class="hdr-cont">
         <section class="hdr-row">
             שלום, <strong>garmash garmash</strong> להלן חשבונית של יולי - אוגוסט 2019 שמספרה 123431231
@@ -98,18 +96,18 @@
                     </div>
                     <div class="cust-det-col col-3-2">
                         <div class="cust-det-row">
-                            <div class="cust-det-cell col-sml">
+                            <div class="cust-det-cell col-sml-l">
                                 כתובת דוא''ל
                             </div>
-                            <div class="cust-det-cell col-lrg bld">
+                            <div class="cust-det-cell col-lrg-l bld">
                                 example@example.com
                             </div>
                         </div>
                         <div class="cust-det-row">
-                            <div class="cust-det-cell col-sml">
+                            <div class="cust-det-cell col-sml-l">
                                 יחויב באמצעות
                             </div>
-                            <div class="cust-det-cell col-lrg bld">
+                            <div class="cust-det-cell col-lrg-l bld">
                                 כרטיס אשראי מסטר קרד
                             </div>
                         </div>
@@ -122,6 +120,15 @@
     <section class="bll-hdr" >
         <div class="bll-det-hdr">
             <span class="bill-txt-prv ">פרטי החשבונית</span>
+            <div class="msgbox-mob visibledevice">
+                <div class="msgbox-wrp ">
+                    <a ng-if="billselected.msgbox.length > 0 " ng-click="showMSGbox()" href="#msgbox">
+                        <div ng-class="{true:'count-1', false:'count-2'}[billselected.msgbox.length < 10]" data-msgvalue="{{billselected.msgbox.length}}">{{ billselected.msgbox.length}} </div>
+                        <div ng-class="{true:'msgbox-m-1', false:'msgbox-m-2'}[billselected.msgbox.length < 10]"></div>
+
+                    </a>
+                </div>
+            </div>
         </div>
         <section class="bll-row">
 
@@ -134,14 +141,15 @@
                 </div>
                 <div class="lbl-hdr" >
                     <span class="lbl-hdr-cll">הצג חשבון לפי</span>
-                    <select class="bll-prd-select"
-                            ng-init="start()"
-                            id="myBtn"
-                            name="bills" ng-options="bill.subsciber for bill in billlist"
-                            ng-model="billselected"
-                            ng-change="getdetails(billselected.index)"
-                            >
-                    </select>
+                    <section class="bll-prd-select">
+                        <select
+                                ng-init="start()"
+                                id="myBtn"
+                                name="bills" ng-options="bill.subsciber for bill in billlist"
+                                ng-model="billselected"
+                                ng-change="getdetails(billselected.index)">
+                        </select>
+                    </section>
                 </div>
                 <section class="ttl-col ">
                     <div class="ttl-cell">
@@ -161,11 +169,11 @@
         </section>
     </section>
 
-<section class="main-content-nav visibledevice" id="divnav">
-    <nav class="cell-nav active" onclick="getData('pay')" id="pay"> פירוט חיובים</nav>
-    <nav class="cell-nav" onclick="getData('use')" id="use">פירוט השימוש</nav>
-    <nav class="cell-nav" onclick="getData('act')" id="act">פעולות נוספות</nav>
-</section>
+    <section class="main-content-nav visibledevice" id="divnav">
+        <nav class="cell-nav active" onclick="getData('pay')" id="pay"> פירוט חיובים</nav>
+        <nav class="cell-nav" onclick="getData('use')" id="use">פירוט השימוש</nav>
+        <nav class="cell-nav" onclick="getData('act')" id="act">פעולות נוספות</nav>
+    </section>
 
     <section class="main-content " >
         <section class="usage visibledevice" id="usage">
@@ -209,16 +217,16 @@
                             </div>
                         </div>
                         <div ng-if="useditem.used[0].procentMin!=''">
-                        <div class="chart-ttl">כמה צרכת דקות שיחה?</div>
-                        <div class="usage_row">
-                            <div class="donut" data-value="{{ useditem.used[0].procentMin }}" data-text="#E1248E" data-pct="{{useditem.used[0].Min}}"></div>
-                        </div >
+                            <div class="chart-ttl">כמה צרכת דקות שיחה?</div>
+                            <div class="usage_row">
+                                <div class="donut" data-value="{{ useditem.used[0].procentMin }}" data-text="#E1248E" data-pct="{{useditem.used[0].Min}}"></div>
+                            </div >
                         </div>
                         <div ng-if="useditem.used[0].procentSms!=''">
-                        <div class="chart-ttl">כמה צרכת SMS ?</div>
-                        <div class="usage_row">
-                            <div class="donut" data-value="{{ useditem.used[0].procentSms }}" data-text="#0B69BA" data-pct="{{useditem.used[0].SMS}}"></div>
-                        </div>
+                            <div class="chart-ttl">כמה צרכת SMS ?</div>
+                            <div class="usage_row">
+                                <div class="donut" data-value="{{ useditem.used[0].procentSms }}" data-text="#0B69BA" data-pct="{{useditem.used[0].SMS}}"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -264,23 +272,22 @@
                                                 <label  class="item_total bld">{{ item.bill_part_total }}   </label>
                                                 <div class="item-vsml ">
                                                     <div ng-if="item.submsg!='-1'" class="i-wrp">
-                                                        <info class="i-info active" ng-click="showI($index)">i</info>
-
+                                                        <info class="i-info active" ng-click="showI($index)"
+                                                              ng-class="{false:'active', true:'disactive'}[iValue[$index]==true]">i
+                                                        </info>
                                                     </div>
                                                 </div>
-
                                             </div>
 
                                         </div>
                                     </div>
-                                    <idiv class="i-popup hide ">
+                                    <idiv class="i-popup" ng-show="iValue[$index]==true">
                                         <ispan class="i-popup-content"></ispan>
                                     </idiv>
                                 </a>
                             </div>
 
                             <div ng-if="item.services.length > 0">
-
                                 <a class="part1" data-part="{{ $index }}">
                                     <div class="item_data">
                                         <div  class="itemPl" ng-click="toggleDisplay($index)">
@@ -298,12 +305,15 @@
                                             </div>
                                         </div>
                                         <div class="item_m">
-                                            <label  class="item_total bld">{{ item.bill_part_total }}  </label>
-                                            <div ng-if="item.submsg!='-1'" class="item-vsml " >
-                                                <info class="i-info active" ng-click="showI($index)">i</info>
-                                                <idiv class="i-popup hide ">
-                                                    <ispan class="i-popup-content"></ispan>
-                                                </idiv>
+                                            <div class="wrp-itm">
+                                                <label  class="item_total bld">{{ item.bill_part_total }}   </label>
+                                                <div class="item-vsml ">
+                                                    <div ng-if="item.submsg!='-1'" class="i-wrp">
+                                                        <info class="i-info active" ng-click="showI($index)"
+                                                              ng-class="{false:'active', true:'disactive'}[iValue[$index]==true]">i
+                                                        </info>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
