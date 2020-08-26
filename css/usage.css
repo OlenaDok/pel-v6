@@ -15,6 +15,7 @@
 
 .use-txt {
     font-size: 30px;
+    font-family: SpacerBold;
     font-weight: bold;
     color: #153958;
     flex-flow: row;
@@ -32,6 +33,7 @@
     height: 36px;
     width: 30%;
     font-size: 20px;
+    font-family: SpacerBold;
     font-weight: bold;
     color: #2A85D4;
     text-align: center;
@@ -123,6 +125,7 @@
 
 .chart-ttl {
     font-size: 19px;
+    font-family: SpacerBold;
     font-weight: bold;
     color: rgb(21, 57, 88);
     padding-right: 0.4em;

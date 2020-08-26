@@ -41,8 +41,9 @@
     text-align: left;
     width: 40%;
     font-family: SpacerBold;
+    font-weight: bold;
     font-size: 25px;
-  /*  font-weight: bold; */
+    /*  font-family: SpacerBold; */
     color: #FFFFFF;
     display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
     flex-flow: column;
@@ -75,18 +76,20 @@
 .payment_total_vT {
     width: 90%;
     font-size: 25px;
+    font-family: SpacerBold;
     font-weight: bold;
     color: #FFFFFF;
     text-align: left;
 }
 .spr {
-line-height: 1.2;
+    line-height: 1.2;
     font-size: 30px;
 }
 
 
 .all_total {
     font-size: 20px;
+    font-family: SpacerBold;
 }
 
 .blue {
@@ -118,7 +121,7 @@ line-height: 1.2;
     background-repeat: no-repeat;
     width: 151px;
     height: 13px;
-  /*  transform: scale(0.8);*/
+    /*  transform: scale(0.8);*/
 }
 
 

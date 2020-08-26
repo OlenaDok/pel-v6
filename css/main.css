@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: fbspaceren-bold;
-    font-weight: bold;
+    font-family: SpacerBold;
     src:  local('fbspaceren-bold'), url('fonts/fbspaceren-bold-webfont.ttf');
 }
 */
@@ -14,7 +14,7 @@
     font-family: 'SPACER-REG';
     font-display: fallback;
     src: url('/fonts/spacerboldwebfont.ttf') format('truetype'),
-            url('/fonts/spacerboldwebfont.eot') format('eot'),
+    url('/fonts/spacerboldwebfont.eot') format('eot'),
     url('/fonts/spacerboldwebfont.woff') format('woff'),
 
     url('/fonts/spacerboldwebfont.svg') format('svg');
@@ -33,9 +33,9 @@
 @font-face {
     font-family: SpacerBold;
     src: url("fonts/spacerboldwebfont.ttf") format('truetype'),
-        url("fonts/spacerboldwebfont.eot") format('eot'),
-        url("fonts/spacerboldwebfont.woff") format('woff'),
-        url("fonts/spacerboldwebfont.svg") format('svg');
+    url("fonts/spacerboldwebfont.eot") format('eot'),
+    url("fonts/spacerboldwebfont.woff") format('woff'),
+    url("fonts/spacerboldwebfont.svg") format('svg');
     font-display: fallback;
     unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
 }
@@ -100,6 +100,9 @@
     .cust-det-row {
         display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
         flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         padding: 0.2em 0 0.2em 0;
     }
 
@@ -124,6 +127,11 @@
         color: #818181;
     }
 
+    .bll-prd-cell{
+        text-align: center;
+        padding: 0.5em;
+    }
+
     .col-lrg {
         width: 55%;
         color: #2a85d4;
@@ -140,16 +148,18 @@
 
     .bll-row {
         flex-flow: column;
-        width: 100%;
+        width: 95%;
     }
     .bll-det-hdr {
         width: 95%;
+        padding-bottom: 3%;
+
     }
     .bill-data-row {
         display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
     }
     .bll-period {
@@ -182,7 +192,8 @@
         width: 100%;
     }
     .bill-txt-prv {
-        padding-right: 5%;
+       /* padding-right: 3%;*/
+        font-size: 23px;
     }
     .lbl-hdr {
         width: 49%;
@@ -380,6 +391,10 @@
     }
     .bill-txt-prv {
         padding: 5% 25% 15% 0;
+        font-size: 30px;
+    }
+    .bll-prd-cell{
+        text-align: left;
     }
     .lbl-hdr {
         width: 25%;
@@ -521,7 +536,9 @@
     .bll-hdr{
         flex-flow: row;
     }
-
+    .bll-prd-cell{
+        text-align: right;
+    }
 
     .usage {
         width: 35%;
@@ -560,6 +577,7 @@
     }
     .bill-txt-prv {
         padding: 5% 25% 15% 0;
+        font-size: 30px;
     }
     .lbl-hdr {
         width: 25%;
@@ -627,7 +645,7 @@ body {
 /*
 .bill-txt-prv {
     font-size: 30px;
-    font-weight: bold;
+    font-family: SpacerBold;
     line-height: 0.933;
     color: rgb(21, 57, 88);
 }
@@ -647,7 +665,7 @@ ul li a {
 }
 
 ul li a :hover {
-    /* font-weight: bold;*/
+    /* font-family: SpacerBold;*/
     text-decoration: none;
 }
 
@@ -678,6 +696,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     /*  display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex; */
     flex-flow: row;
     font-size: 30px;
+    font-family: SpacerBold;
     font-weight: bold;
     color: rgb(21, 57, 88);
     line-height: 0.933;
