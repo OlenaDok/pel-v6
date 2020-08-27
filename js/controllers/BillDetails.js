@@ -20,6 +20,7 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
     /* --to do --*/
     var msgBoxVisited;
 
+
     $scope.loaddatachart = function () {
         ChartService.loadChart();
     }
@@ -36,6 +37,9 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
         $scope.usage = obj.service_usage;
         msgBoxVisited = false;
 
+        $scope.indUseIn = 1;
+        $scope.indUseOUT = 0;
+
         ChartService.loadChart();
       //  console.log('before serv');
         countBox();
@@ -45,8 +49,9 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
     $scope.showIn = function (value) {
         $scope.useFilter = value;
        // this.onpage = false;
-        console.log('this.showIn ');
+        console.log('this.showIn  begin');
         console.log('useFilter ' + $scope.useFilter);
+
         console.log('this.onpageIn ' + onpageIn);
         console.log('this.onPageOut ' + onPageOut);
 
@@ -80,6 +85,7 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
            // onpageIn = !onpageIn;
 
         }
+        console.log('this.onpageIn end ');
         console.log('this.onpageIn ' + onpageIn);
         console.log('this.onPageOut ' + onPageOut);
 

@@ -179,9 +179,13 @@
         <section class="usage visibledevice" id="usage">
             <div class="use-txt hdr-c visibledesktop "> פירוט השימוש </div>
             <div class="usage_btns">
-                <div id="usein" class="use-btn btn-in slt-btn"  ng-on-click="showIn('in')">                    בארץ
+                <div id="usein" class="use-btn btn-in slt-btn"
+                     ng-class="{true:'activeB', false:'disactiveB'}[indUseIn > 0]"
+                     ng-on-click="showIn('in')">                    בארץ
                 </div>
-                <div id="useout" class="use-btn btn-out"  ng-on-click="showIn('out')">
+                <div id="useout" class="use-btn btn-out"
+                     ng-class="{true:'activeB', false:'disactiveB'}[indUseOUT > 0]"
+                     ng-on-click="showIn('out')">
                     בחו''ל
                 </div>
             </div>
@@ -194,17 +198,17 @@
                         <div ng-if="useditem.used[0].procentGB!=''" class="usage_row">
                             <label class="usage_data">{{ useditem.used[0].GB }}</label>
                             <div class="lineChart" id="first1" data-value="{{ useditem.used[0].procentGB }}" data-text="#0B69BA"></div>
-                            <label class="usage_data_val">{{ useditem.used[0].procentGB }} %</label>
+                            <label class="usage_data_val">{{ useditem.used[0].procentGB }}%</label>
                         </div>
                         <div ng-if="useditem.used[0].procentMin!=''" class="usage_row">
                             <label class="usage_data">{{ useditem.used[0].Min }}</label>
                             <div class="lineChart" id="first2" data-value="{{ useditem.used[0].procentMin }}" data-text="#E1248E"></div>
-                            <label class="usage_data_val">{{ useditem.used[0].procentMin }} %</label>
+                            <label class="usage_data_val">{{ useditem.used[0].procentMin }}%</label>
                         </div>
                         <div ng-if="useditem.used[0].procentSms!=''"  class="usage_row">
                             <label class="usage_data">{{ useditem.used[0].SMS }}</label>
                             <div class="lineChart" id="first3" data-value="{{ useditem.used[0].procentSms }}" data-text="#0B69BA"></div>
-                            <label class="usage_data_val">{{ useditem.used[0].procentSms }} %</label>
+                            <label class="usage_data_val">{{ useditem.used[0].procentSms }}%</label>
                         </div>
                     </div>
                 </div>
@@ -262,14 +266,14 @@
                                                 </div>
                                             </div>
                                             <div class="item_big">
-                                                <label  class="title"> {{ item.bill_part_desc }}</label>
+                                                <label  class="title-cat"> {{ item.bill_part_desc }}</label>
                                                 <label  class="subtitle">{{ item.bill_part_msg }}</label>
                                             </div>
 
                                         </div>
                                         <div class="item_m">
                                             <div class="wrp-itm">
-                                                <label  class="item_total bld">{{ item.bill_part_total }}   </label>
+                                                <label  class="item_total bld">{{ item.bill_part_total }}  &#8362; </label>
                                                 <div class="item-vsml ">
                                                     <div ng-if="item.submsg!='-1'" class="i-wrp">
                                                         <info class="i-info active" ng-click="showI($index)"
@@ -300,13 +304,13 @@
                                                 </div>
                                             </div>
                                             <div class="item_big">
-                                                <label  class="title"> {{ item.bill_part_desc }}</label>
+                                                <label  class="title-cat"> {{ item.bill_part_desc }}</label>
                                                 <label  class="subtitle">{{ item.bill_part_msg }}</label>
                                             </div>
                                         </div>
                                         <div class="item_m">
                                             <div class="wrp-itm">
-                                                <label  class="item_total bld">{{ item.bill_part_total }}   </label>
+                                                <label  class="item_total bld">{{ item.bill_part_total }} &#8362; </label>
                                                 <div class="item-vsml ">
                                                     <div ng-if="item.submsg!='-1'" class="i-wrp">
                                                         <info class="i-info active" ng-click="showI($index)"
@@ -325,20 +329,20 @@
                                 <secdiv class="part2 hide">
                                     <div class="part2_data ">
                                         <div class="data header">
-                                            <div class="item_l title ">תיאור</div>
+                                            <div class="item_l title-r ">תיאור</div>
                                             <div class="item_s title" ng-class="{true:'const-ttl', false:'adds-ttl'}[item.paycode == 'pcn']"></div>
                                             <div class="item_s title ">סה"כ לתשלום</div>
                                         </div>
                                         <div class="data data_row"  ng-repeat="servitem in item.services">
                                             <div class="item_l ">{{ servitem.name }}</div>
-                                            <div class="item_s ">{{ servitem.rate }}</div>
-                                            <div class="item_s cntr bld">{{ servitem.total }}</div>
+                                            <div class="item_s cntr">{{ servitem.rate }}</div>
+                                            <div class="item_s cntr bld">{{ servitem.total }} </div>
                                         </div>
                                     </div>
                                     <div class="data-total-cnt">
                                         <div class="data_total">
                                             <div class="item_l ">סה''כ {{ item.bill_part_desc }} כולל מע''מ</div>
-                                            <div class="item_s cntr">{{ item.bill_part_total }}</div>
+                                            <div class="item_s lft">{{ item.bill_part_total }} &#8362; </div>
                                         </div>
                                     </div>
                                 </secdiv>

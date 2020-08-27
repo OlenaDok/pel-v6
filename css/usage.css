@@ -52,12 +52,13 @@
     border-radius: 100px 0 0  100px ;
 }
 
-.use-btn:active {
+.activeB:active {
     color: #FFFFFF;
     background-color: #006DB8;
     border: none;
+
     transform: translateY(1px);
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 .slt-btn {
     color: #FFFFFF;
@@ -85,6 +86,7 @@
 .usage_data_val {
     width: 10%;
     padding-top: 10px;
+    direction: ltr;
 }
 
 .donut {
@@ -145,8 +147,7 @@
 }
 
 
-.fld-usage::-webkit-scrollbar-track
-{
+.fld-usage::-webkit-scrollbar-track{
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     border-radius: 10px;
     background-color: #F5F5F5;
@@ -167,4 +168,11 @@
     direction: rtl;
     width: 100%;
     padding-top: 0.3px;
+}
+
+
+.disactiveB {
+    color: #FFFFFF;
+    background-color:#c5c5c5;
+    border: none;
 }
