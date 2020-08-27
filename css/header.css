@@ -85,8 +85,9 @@
     color: #2B8FD4;
     width: min-content;
     padding-top: 20%;
-    padding-right: 10%;
+  /*  padding-right: 10%; */
     text-align: right;
+    line-height: 1;
 }
 
 
@@ -135,5 +136,5 @@ input[type='checkbox'] {
 
 .lbl-toggle-txt {
     width: 50%;
-    padding-right: 1em;
+   /* padding-right: 1em;*/
 }

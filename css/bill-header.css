@@ -1,5 +1,5 @@
 .bll-hdr{
-    width: 95%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -11,9 +11,9 @@
     -webkit-align-content: center;
     justify-content: center;
     -webkit-justify-content: center;
-    align-items: center;
-    -webkit-align-items: center;
-    margin-top: 1em;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    margin-top: 0.75em;
 
 }
 
@@ -28,6 +28,7 @@
 .bill-txt-prv {
     font-family: SpacerBold;
     font-weight: bold;
+    line-height: 1;
 }
 
 .bll-row {
@@ -45,11 +46,11 @@
 }
 
 
-bill-data-row {
+.bill-data-row {
     display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
     flex-flow: row wrap;
     align-self: center;
-
+    justify-content: space-between;
 }
 
 .bll-period {
@@ -96,16 +97,18 @@ bill-data-row {
 
 .bll-prd-select {
     width: 100%;
-    font-size: 20px;
+    font-size: 22px;
     color: rgb(76, 76, 76);
     line-height: 1.25;
+    font-weight:normal;
+
 }
 
 select::-ms-expand {
     display: none;
 }
 .bll-prd-select option {
-    font-weight:lighter;
+    font-weight:normal;
 }
 
 .bll-prd-select select {
@@ -122,28 +125,24 @@ select::-ms-expand {
     border-color: rgb(196, 196, 196);
     border-style: solid;
     border-radius: 5px;
-    width: 75%;
+    width: 85%;
 }
 .ttl-col {
     display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
     flex-flow: column;
     -webkit-flex-flow: column;
     -ms-flex-flow: column;
-
     align-items: flex-end;
     -webkit-box-align: end;
     -moz-box-align: end;
     -ms-flex-align:end;
-
     justify-content: center;
     -webkit-flex-flow: column;
     -webkit-align-items: flex-end;
-
     align-self: end;
-
     -ms-flex-direction: column;
     -ms-flex-pack: justify;
-    width: 47%;
+
 }
 
 
@@ -173,7 +172,6 @@ select::-ms-expand {
     align-self: end;
     -webkit-align-self: flex-end;
 
-    padding: 2% 2% 2% 2%;
 }
 /* bll-prd-ttl t-cntr */
 .ttl-cell-line {
@@ -210,4 +208,5 @@ select::-ms-expand {
     font-weight: bold;
     color: #153958;
     text-align: center;
+    padding: 2% 2% 2% 2%;
 }
