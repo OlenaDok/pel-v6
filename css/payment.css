@@ -170,7 +170,7 @@
     flex-flow: row;
 
     width: 35%;
-    height: 38px;
+    height: 2.375em;
 }
 
 .wrp-itm {
@@ -199,7 +199,7 @@
     padding-left: 1%;
     padding-right: 1%;
     width: 100%;
-    min-height: 70px;
+    min-height: 4.375em;
 }
 
 .i-wrp{
@@ -219,13 +219,13 @@
 
 .plus:after {
     content: '\271A';
-    font-size: 20px;
+    font-size: 1.25em;
     color: #E43B99;
 }
 
 .minus:after {
     content: '\268A';
-    font-size: 20px;
+    font-size: 1.25em;
     color: #E43B99;
 }
 
@@ -353,7 +353,7 @@
 
 }
 .data_row {
-    font-size: 18px;
+    font-size:  1.25em;
     color: #818181;
 }
 
@@ -514,10 +514,10 @@
     background-color: #DFF1FF;
     opacity: 1;
     color: #153958;
-    width: 250px;
+    width: 15em;
     min-height: min-content;
     max-height: 6em;
-    padding: 8px;
+    padding: 0.5em;
     position: absolute;
     z-index: 101;
     bottom: 0;
@@ -538,7 +538,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    left: calc(250px + 10%);
+    left: calc(15em + 10%);
     /*calc(-250px - 10%); 20em;*/
     top: 1.75em;
     animation: fadeIn 1s;
@@ -581,7 +581,7 @@
 }
 
 .i-info.disactive {
-    min-width: 17.5px;
+    min-width: 1em;
     text-align: center;
     color: rgb(147, 147, 147);;
     border-width: 1px;
@@ -591,7 +591,7 @@
 }
 
 .i-info.active{
-    min-width: 17.5px;
+    min-width: 1em;
     text-align: center;
     color: #FFFFFF;;
     border-width: 1px;
@@ -642,15 +642,15 @@
 .msgbox-m-1 {
     background-image: url("img/msg/env_wmsg.png");
     background-repeat: no-repeat;
-    width: 50px;
-    height: 38px;
+    width: 57px;
+    height: 44px;
 }
 
 .msgbox-m-2 {
     background-image: url("img/msg/env_w2msg.png");
     background-repeat: no-repeat;
-    width: 55px;
-    height: 38px;
+    width: 64px;
+    height: 44px;
 }
 
 .count-2 {
@@ -658,14 +658,14 @@
     direction: rtl;
     content: attr(data-msgvalue);
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 1em;
     font-family: SpacerBold;
     float: left;
     height: 1.3em;
     width: 1.3em;
     border-radius: 50%;
-    top: -2px;
-    left: -4px;
+    top: 0px;
+    left: -2px;
 }
 
 .count-1 {
@@ -673,22 +673,22 @@
     direction: rtl;
     content: attr(data-msgvalue);
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 1em;
     font-family: SpacerBold;
     font-weight: bold;
     float: left;
     height: 1.2em;
     width: 1.2em;
     border-radius: 50%;
-    top: -3px;
-    left: -9px;
+    top: 0;
+    left: -5px;
 
 }
 
 .count:after {
     content: attr(data-msgvalue);
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 1.125em;
     font-family: SpacerBold;
     font-weight: bold;
     display: block;
@@ -702,7 +702,7 @@
     content: attr(data-msgvalue);
     /* display: block;*/
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 1em;
     font-family: SpacerBold;
     float: left;
     /*  */
@@ -724,7 +724,7 @@
      */
     border: #818181 solid 1px;
     /*width: min-content; */
-    top: -20px;
+    top: -1.25em;
 }
 
 
@@ -816,7 +816,7 @@
 }
 
 .box-ttl {
-    font-size: 30px;
+    font-size: 1.875em;
     color: rgb(21, 57, 88);
     font-family: SpacerBold;
     text-align: center;
@@ -828,7 +828,7 @@
     position: absolute;
     top: 0;
     right: 10px;
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: bolder;
     text-decoration: none;
     color: rgb(228, 59, 153);
@@ -856,14 +856,14 @@
 }
 */
 .msgBox-date {
-    font-size: 20px;
+    font-size: 1.25em;
     color: rgb(0, 109, 184);
     line-height: 1.25;
 
 }
 
 .msgBox-msg {
-    font-size: 20px;
+    font-size: 1.25em;
     color: rgb(47, 76, 102);
     line-height: 1.25;
     padding-right: 5%;

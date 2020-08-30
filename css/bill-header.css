@@ -1,5 +1,5 @@
 .bll-hdr{
-    width: 100%;
+    width: 97%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -9,8 +9,8 @@
     z-index: 10;
     align-content: center;
     -webkit-align-content: center;
-    justify-content: center;
-    -webkit-justify-content: center;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
     align-items: center;
     -webkit-align-items: center;
     margin-top: 0.75em;
@@ -41,7 +41,7 @@
     background-image: url('img/line_pic.png');
     background-repeat: no-repeat;
     /*width: 155px; */
-    height: 11px;
+    height: 0.85em;
 
 }
 
@@ -77,28 +77,28 @@
 }
 
 .lbl-hdr-cll {
-    font-size: 20px;
+    font-size: 1.25em;
     color: #2A85D4;
     padding-bottom: 0.5em;
 }
 
 .bll-prd-cell {
     display: table-cell;
-    font-size: 20px;
+    font-size: 1.25em;
     flex-grow: 2;
     text-align: right;
     line-height: 1.25;
     justify-content: center;
     color: #153958;
     /*padding: 0.5em;*/
-   /* padding-top: 0.5em;*/
+    /* padding-top: 0.5em;*/
     padding-bottom: 0.5em;
     padding-left: 5%;
 }
 
 .bll-prd-select {
     width: 100%;
-    font-size: 22px;
+    font-size: 1.375em;
     color: rgb(76, 76, 76);
     line-height: 1.25;
     font-weight:normal;
@@ -190,13 +190,13 @@ select::-ms-expand {
     align-self: center;
     -webkit-align-self: center;
 
-    width: 155px;
+    width: 10em;
 }
 .ttl-grp{
     /*padding-right: 5%;*/
 }
 .lbl-hdr-s{
-    font-size: 20px;
+    font-size: 1.25em;
     color: #2A85D4;
     text-align: right;
     padding-right: 5%;
@@ -204,7 +204,7 @@ select::-ms-expand {
 }
 
 .bll-prd-ttl {
-    font-size: 30px;
+    font-size: 1.875em;
     font-family: SpacerBold;
     font-weight: bold;
     color: #153958;
