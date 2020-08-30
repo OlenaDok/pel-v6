@@ -86,13 +86,14 @@
     display: table-cell;
     font-size: 20px;
     flex-grow: 2;
+    text-align: right;
     line-height: 1.25;
-
     justify-content: center;
     color: #153958;
     /*padding: 0.5em;*/
-    padding-top: 0.5em;
+   /* padding-top: 0.5em;*/
     padding-bottom: 0.5em;
+    padding-left: 5%;
 }
 
 .bll-prd-select {

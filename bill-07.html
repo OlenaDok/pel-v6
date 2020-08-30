@@ -213,19 +213,19 @@
                 <div ng-if="billselected.index!=0" >
                     <div  ng-repeat="useditem in billselected.service_usage | filter:useFilter">
                         <div ng-if="useditem.used[0].procentGB!=''">
-                            <div class="chart-ttl">כמה צרכת מהחבילה שלך?</div>
+                            <div class="chart-ttl">חבילת גלישה</div>
                             <div class="usage_row">
                                 <div class="donut" data-value="{{ useditem.used[0].procentGB }}" data-text="#0B69BA" data-pct="{{useditem.used[0].GB}}"></div>
                             </div>
                         </div>
                         <div ng-if="useditem.used[0].procentMin!=''">
-                            <div class="chart-ttl">כמה צרכת דקות שיחה?</div>
+                            <div class="chart-ttl">דקות שיחה</div>
                             <div class="usage_row">
                                 <div class="donut" data-value="{{ useditem.used[0].procentMin }}" data-text="#E1248E" data-pct="{{useditem.used[0].Min}}"></div>
                             </div >
                         </div>
                         <div ng-if="useditem.used[0].procentSms!=''">
-                            <div class="chart-ttl">כמה צרכת SMS ?</div>
+                            <div class="chart-ttl"> SMS</div>
                             <div class="usage_row">
                                 <div class="donut" data-value="{{ useditem.used[0].procentSms }}" data-text="#0B69BA" data-pct="{{useditem.used[0].SMS}}"></div>
                             </div>
