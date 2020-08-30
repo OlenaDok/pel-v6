@@ -744,8 +744,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
     flex-flow: row;
     font-size: 26px;
     font-family: SpacerBold;
-    color: rgb(21, 57, 88);
-    line-height: 0.933;
+    color: #153958;
+    line-height: 0.9;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
