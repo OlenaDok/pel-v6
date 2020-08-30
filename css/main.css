@@ -64,7 +64,7 @@
         line-height: normal;
     }
     .wraper {
-        max-width: 600px;
+        max-width: 37.5em;
         margin: auto;
     }
     .wrap-hdr {
@@ -115,7 +115,7 @@
     }
     .lbl-toggle {
         display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
-        font-size: 26px;
+        font-size: 1.625em;
         text-align: right;
         width: inherit;
         padding: 0.75rem 0 0.75rem 0;
@@ -157,6 +157,7 @@
         width: 95%;
         padding-bottom: 3%;
         padding-right: 5%;
+        justify-content: space-between;
     }
     .bill-data-row {
         display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
@@ -170,15 +171,15 @@
         flex-grow: 1;
     }
     .title {
-        font-size: 20px;
+        font-size: 1.375em;
     }
 
     .title-cat {
-        font-size: 20px;
+        font-size: 1.375em;
     }
 
     .title-r {
-        font-size: 20px;
+        font-size: 1.375em;
     }
 
     .t-cntr {
@@ -205,7 +206,7 @@
     }
     .bill-txt-prv {
        /* padding-right: 3%;*/
-        font-size: 24px;
+        font-size: 1.5em;
         width: 45%;
     }
     .lbl-hdr {
@@ -235,7 +236,7 @@
         padding-right: 2%;
     }
     .all_total {
-        font-size: 1.65em;
+      /*  font-size: 1.65em;*/
     }
 
 
@@ -246,14 +247,14 @@
         display: none;
     }
     .item_total {
-        font-size: 22px;
+        font-size: 1.375em;
     }
 
     .data_total {
-        font-size: 22px;
+        font-size: 1.375em;
     }
     .subtitle {
-        font-size: 18px;
+        font-size: 1.25em;
     }
 
     .col-sml {
@@ -311,20 +312,20 @@
         align-items: center;
         /*  background-color: #006DB8;*/
         position: relative;
-        height: 125px;
+        height: 7.815em;
         z-index: 1;
     }
 
     .wrap-cust-det {
         background-color: #006DB8;
-        min-height: 125px;
+        min-height: 7.815em;
     }
 
     .cust-det-hdr {
         display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
         align-content: stretch;
         justify-content: center;
-        left: 70px;
+        left: 4.375em;
     }
 
     .cust-det-data {
@@ -376,14 +377,14 @@
         flex-flow: row;
     }
     .title {
-        font-size: 25px;
+        font-size: 1.56em;
     }
 
     .title-cat {
-        font-size: 25px;
+        font-size: 1.56em;
     }
     .title-r {
-        font-size: 25px;
+        font-size: 1.56em;
     }
 
     .usage {
@@ -421,10 +422,11 @@
 
     .bll-det-hdr {
         width: 20%;
+        justify-content: center;
     }
     .bill-txt-prv {
         padding: 5% 20% 15% 0;
-        font-size: 30px;
+        font-size: 1.875em;
     }
     .bll-prd-cell{
         text-align: left;
@@ -447,13 +449,13 @@
         justify-content: space-between;
     }
     .all_total {
-        font-size: 25px;
+        font-size: 1.56em;
     }
     .item_total {
-        font-size: 25px;
+        font-size:  1.56em;
     }
     .data_total {
-        font-size: 25px;
+        font-size:  1.56em;
     }
 
     .lineAft {
@@ -474,7 +476,7 @@
         width: 65%;
     }
     .subtitle {
-        font-size: 20px;
+        font-size: 1.25em;
     }
     .msgBox-cont {
         width: 45em;
@@ -504,7 +506,7 @@
         align-items: center;
         /*  background-color: #006DB8;*/
         position: relative;
-        height: 125px;
+        height: 7.82em;
         z-index: 1;
 
         -webkit-align-content: center;
@@ -515,14 +517,14 @@
 
     .wrap-cust-det {
         background-color: #006DB8;
-        min-height: 125px;
+        min-height:7.82em;
     }
 
     .cust-det-hdr {
         display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
         align-content: stretch;
         justify-content: center;
-        left: 40px;
+        left: 2.5em;
     }
 
     .cust-det-data {
@@ -615,11 +617,12 @@
     }
 
     .bll-det-hdr {
-        width: 15%;
+        width: 14%;
+        justify-content: center;
     }
     .bill-txt-prv {
         padding: 5% 0 15% 5%;
-        font-size: 30px;
+        font-size: 1.875em;
     }
     .lbl-hdr {
         width: 25%;
@@ -640,7 +643,7 @@
         justify-content: space-between;
     }
     .all_total {
-        font-size: 25px;
+        font-size: 1.56em;
     }
 
     .wrp-cnt{
@@ -658,24 +661,24 @@
         width: 65%;
     }
     .title {
-        font-size: 25px;
+        font-size: 1.56em;
     }
 
     .title-cat {
-        font-size: 25px;
+        font-size: 1.56em;
     }
     .title-r {
-        font-size: 25px;
+        font-size: 1.56em;
     }
     .item_total {
-        font-size: 25px;
+        font-size: 1.56em;
     }
     .data_total {
-        font-size: 25px;
+        font-size: 1.56em;
     }
 
     .subtitle {
-        font-size: 20px;
+        font-size: 1.25em;
     }
     .msgBox-cont {
         width: 45em;

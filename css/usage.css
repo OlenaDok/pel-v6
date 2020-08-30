@@ -14,7 +14,7 @@
 }
 
 .use-txt {
-    font-size: 30px;
+    font-size: 1.875em;
     font-family: SpacerBold;
     font-weight: bold;
     color: #153958;
@@ -30,15 +30,15 @@
 }
 
 .use-btn {
-    height: 36px;
+    height: 2.25em;
     width: 30%;
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: SpacerBold;
     font-weight: bold;
     color: #2A85D4;
     text-align: center;
     vertical-align: bottom;
-    padding-top: 12px;
+    padding-top: 0.75em;
     background-color: #FFFFFF;
     border: none;
     cursor: pointer;
@@ -73,7 +73,7 @@
 }
 .usage_data {
     width: 30%;
-    padding-top: 10px;
+    padding-top: 0.625em;
     float: right;
     text-align: right;
     padding-right: 0.5em;
@@ -81,11 +81,11 @@
 .lineChart {
     width: 60%;
     align-content: center;
-    max-height: 38px ;
+    max-height: 2.25em;
 }
 .usage_data_val {
     width: 10%;
-    padding-top: 10px;
+    padding-top: 0.625em;
     direction: ltr;
 }
 
@@ -105,15 +105,15 @@
     display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
     justify-content: center;
 
-    height: 60px;
-    width: 45px;
+    height: 3.75em;
+    width: 2.82em;
     left: 80%;
     top: 72%;
     /* box-shadow: inset 0 0 0.1em black;*/
     content: attr(data-pct);
     direction: rtl;
-    margin-top: -60px;
-    margin-left: -60px;
+    margin-top: -3.75em;
+    margin-left: -3.75em;
     border-radius: 100%;
     /*    font-size: 1em; */
     /* text-shadow: 0 0 0.5em black;*/
@@ -126,7 +126,7 @@
 }
 
 .chart-ttl {
-    font-size: 19px;
+    font-size: 1.25em;
     font-family: SpacerBold;
     font-weight: bold;
     color: rgb(21, 57, 88);
@@ -141,7 +141,7 @@
 }
 .fld-usage {
     overflow-y: auto;
-    max-height: 485px;
+    max-height: 30em;
     width: 100%;
     direction: ltr;
 }
@@ -154,7 +154,7 @@
 }
 
 .fld-usage::-webkit-scrollbar{
-    width: 12px;
+    width: 0.75em;
     background-color: #F5F5F5;
 }
 
