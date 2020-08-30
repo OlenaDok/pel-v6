@@ -42,7 +42,7 @@
   /*  width: 40%;*/
     font-family: SpacerBold;
     font-weight: bold;
-    font-size: 25px;
+  /*  font-size: 25px;*/
     /*  font-family: SpacerBold; */
     color: #FFFFFF;
     display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
@@ -75,7 +75,7 @@
 
 .payment_total_vT {
     width: 75%;
-    font-size: 25px;
+  /*  font-size: 25px; */
     font-family: SpacerBold;
     font-weight: bold;
     color: #FFFFFF;
@@ -84,7 +84,9 @@
 .spr {
     line-height: 1.2;
   /*  font-size: 30px;*/
-    font-size: 3.75vw;
+
+    font-size: 1em;
+
 }
 
 
