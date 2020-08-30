@@ -77,6 +77,9 @@
         width: 100%;
     }
 
+    .bill_parts {
+        background-color: #F8F8F8;
+    }
     .cust-det {
         display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
         flex-flow: column;
@@ -728,7 +731,6 @@ svg {
     */
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 1s linear;
-
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -742,10 +744,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .main-content-nav {
     /*  display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex; */
     flex-flow: row;
-    font-size: 29px;
+    font-size: 26px;
     font-family: SpacerBold;
-    color: rgb(21, 57, 88);
-    line-height: 0.933;
+    color: #153958;
+    line-height: 0.9;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
