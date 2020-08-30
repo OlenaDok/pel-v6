@@ -11,8 +11,8 @@
     -webkit-align-content: center;
     justify-content: center;
     -webkit-justify-content: center;
-    align-items: flex-start;
-    -webkit-align-items: flex-start;
+    align-items: center;
+    -webkit-align-items: center;
     margin-top: 0.75em;
 
 }
@@ -50,7 +50,7 @@
     display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
     flex-flow: row wrap;
     align-self: center;
-    justify-content: space-between;
+
 }
 
 .bll-period {

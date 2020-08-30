@@ -179,12 +179,12 @@
         <section class="usage visibledevice" id="usage">
             <div class="use-txt hdr-c visibledesktop "> פירוט השימוש </div>
             <div class="usage_btns">
+                <!-- ng-class="{true:'activeB', false:'disactiveB'}[indUseIn > 0]" -->
+                <!-- ng-class="{true:'activeB', false:'disactiveB'}[indUseOUT > 0]" -->
                 <div id="usein" class="use-btn btn-in slt-btn"
-                     ng-class="{true:'activeB', false:'disactiveB'}[indUseIn > 0]"
                      ng-on-click="showIn('in')">                    בארץ
                 </div>
                 <div id="useout" class="use-btn btn-out"
-                     ng-class="{true:'activeB', false:'disactiveB'}[indUseOUT > 0]"
                      ng-on-click="showIn('out')">
                     בחו''ל
                 </div>

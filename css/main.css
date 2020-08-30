@@ -112,7 +112,7 @@
     }
     .lbl-toggle {
         display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
-        font-size: 24px;
+        font-size: 26px;
         text-align: right;
         width: inherit;
         padding: 0.75rem 0 0.75rem 0;
@@ -231,7 +231,7 @@
         padding-right: 2%;
     }
     .all_total {
-        font-size: 20px;
+        font-size: 26px;
     }
 
 
@@ -364,6 +364,7 @@
     .bill-data-row {
         display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
         flex-flow: row;
+        justify-content: space-between;
         width: 100%;
     }
 
@@ -566,6 +567,7 @@
     .bill-data-row {
         display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
         flex-flow: row;
+        justify-content: space-between;
         width: 100%;
     }
 
@@ -737,13 +739,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
         background-image:  url(img/permP.svg);
     }
 }
-
 .main-content-nav {
     /*  display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex; */
     flex-flow: row;
-    font-size: 30px;
+    font-size: 29px;
     font-family: SpacerBold;
-    font-weight: bold;
     color: rgb(21, 57, 88);
     line-height: 0.933;
     text-align: center;
