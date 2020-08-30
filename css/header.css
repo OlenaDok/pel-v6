@@ -137,4 +137,5 @@ input[type='checkbox'] {
 .lbl-toggle-txt {
     width: 50%;
    /* padding-right: 1em;*/
+    font-family: SpacerBold;
 }
