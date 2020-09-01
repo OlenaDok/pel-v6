@@ -242,14 +242,16 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
         info[0].innerHTML = $scope.parts[index].submsg;
         var isCurrState = idiv[0].classList[1];
         console.log('isCurrState = ' +  isCurrState);
+
+        icont[index] = true;
        if (isCurrState === 'ng-hide' ){
            /*
            idiv[0].classList.remove("hide");
 
            idiv[0].classList.toggle("show");
 */
-           iInfo[0].classList.remove("active");
-           iInfo[0].classList.toggle("disactive");
+          /* iInfo[0].classList.remove("active"); */
+          // iInfo[0].classList.toggle("disactive");
            icont[index] = true;
        }
         if (isCurrState === 'show' ||  isCurrState === undefined){
@@ -257,19 +259,25 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
             idiv[0].classList.remove("show");
 
             idiv[0].classList.toggle("hide");
-             */
+
 
             iInfo[0].classList.remove("disactive");
             iInfo[0].classList.toggle("active");
-
+            */
             icont[index] = false;
         }
 
         $scope.iValue = icont;
+/*
+        var body = document.body;
+        body.style.height = '100vh';
+        body.style.overflowY = 'hidden';
+
+ */
     }
 
     $scope.disactive = function () {
-        console.log('disactive = ');
+      /*  console.log('disactive = ');*/
 
         for( var i = 0; i < icont.length; i++) {
             icont[i] = false;
@@ -295,7 +303,7 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
             '<div class="box-cnt">' ;
         var boxEnd = '</div></div>';
 
-        var dateStart = '<div class="msgBox-date col-3-1">';
+        var dateStart = '<div class="msgBox-ttl col-3-2">';
         var dateEnd = '</div>';
         var msgStart = '<div class="msgBox-msg col-3-2">';
         var msgEnd = '</div>';
@@ -309,7 +317,7 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
         for( var i=0; i < msgbox.length; i++) {
             data+= rowStart;
             data+= dateStart;
-            data+= msgbox[i].date;
+            data+= msgbox[i].title;
             data+= dateEnd;
 
             data+= msgStart;
@@ -344,11 +352,28 @@ myApp.controller('SubsDetails', function ($scope, ChartService) {
         }
     }
 
+/*
     self.onpointerdown = function() {
+      /*  var test = self.event.target;
+        console.log('test self = ' + test);
         $scope.disactive();
     }
+    */
 
+    $scope.testDir = function (){
+        console.log('test directiva working');
+    }
+
+    $scope.testDir2 = function (){
+        console.log('test directiva2 working');
+    }
+
+    $scope.onClick = function(evt) {
+        console.debug("Hello click event: %o ",evt);
+    }
 });
+
+
 
 myApp.controller('CustomerDetails', function ($scope) {
 

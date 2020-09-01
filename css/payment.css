@@ -526,13 +526,14 @@
     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
     overflow-x: hidden;
-    word-wrap: break-spaces;
+    word-wrap: normal;
 }
 
 .i-popup {
     position: relative;
-    width: min-content;
-    z-index: 99;
+    width: fit-content;
+    height: fit-content;
+    z-index: 102;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -540,7 +541,7 @@
     user-select: none;
     left: calc(15em + 10%);
     /*calc(-250px - 10%); 20em;*/
-    top: 1.75em;
+    top: 5em;
     animation: fadeIn 1s;
 }
 
@@ -811,7 +812,7 @@
 }
 .msgBox-cont-row {
     display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex; display: flex;
-    flex-flow: row;
+    flex-flow: column;
     padding: 0.5em;
 }
 
@@ -859,7 +860,13 @@
     font-size: 1.25em;
     color: rgb(0, 109, 184);
     line-height: 1.25;
+}
 
+.msgBox-ttl {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: rgb(47, 76, 102);
+    line-height: 1.25;
 }
 
 .msgBox-msg {

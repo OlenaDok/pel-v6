@@ -136,3 +136,20 @@ function closePops () {
     }
 }
 */
+window.onclick = function (event) {
+    // console.log(event.pageX);
+  /**  console.info("Hello click event: %o " + event); */
+}
+
+function onClick(evt) {
+    console.debug("Hello click event: %o ",evt);
+}
+
+const idiv = document.getElementsByTagName('ispan');
+
+console.log("querySelector: idiv " + idiv);
+
+idiv.onclick = function changeContent() {
+    console.log("changeContent: %o " + idiv);
+}
+
